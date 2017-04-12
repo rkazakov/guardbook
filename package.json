@@ -1,0 +1,11 @@
+{
+  "name": "guardbook",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "url": "git@github.com:rkazakov/guardbook.git",
+    "type": "git"
+  },
+  "author": "Ruslan Kazakov <Ruslan.Kazakov@gmail.com>",
+  "license": "MIT"
+}

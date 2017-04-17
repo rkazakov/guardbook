@@ -1,17 +1,9 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { Link } from 'react-router';
+import { Router, browserHistory } from 'react-router';
+import routes from './routes';
 
-const Main = React.createClass({
-  render() {
-    return (
-      <div>
-        <h1>
-          <Link to="/">Guardbook</Link>
-        </h1>
-      </div>
-    )
-  }
-});
-
-render(<Main />, document.getElementById('root'));
+render(
+  <Router history={browserHistory} routes={routes} />,
+  document.getElementById('root')
+);

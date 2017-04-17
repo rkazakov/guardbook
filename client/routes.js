@@ -3,6 +3,7 @@ import { Route, IndexRoute } from 'react-router';
 import App from './components/App';
 import HomePage from './components/Home/HomePage';
 import AboutPage from './components/About/AboutPage';
+import './styles/styles.styl';
 
 export default (
   <Route path='/' component={App}>

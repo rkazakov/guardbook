@@ -1,20 +1,18 @@
-import React, {PropTypes} from 'react';
-import Header from './Header';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import Main from './Main';
+import * as actionCreators from '../actions/actionCreators';
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <Header />
-        {this.props.children}
-        <p>Footer</p>
-      </div>
-    )
+function mapStateToProps(state) {
+  return {
+    items: state.items,
   }
-};
+}
 
-App.propTypes = {
-  children: PropTypes.object.isRequred
-};
+function mapDispachToProps(dispatch) {
+  return bindActionCreators(actionCreators, dispatch);
+}
+
+const App = connect(mapStateToProps, mapDispachToProps)(Main);
 
 export default App;

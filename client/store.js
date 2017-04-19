@@ -4,8 +4,10 @@ import { browserHistory } from 'react-router';
 
 import rootReducer from './reducers/index';
 
+import guards from './data/guards';
+
 const defaultState = {
-  items: 1
+  guards
 };
 
 const store = createStore(rootReducer, defaultState,

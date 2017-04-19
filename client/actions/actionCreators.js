@@ -1,7 +1,7 @@
 // increment
-export function increment(index) {
+export function incrementLevel(index) {
   return {
-    type: 'INCREMENT_ITEMS',
+    type: 'INCREMENT_LEVEL',
     index
   }
 }

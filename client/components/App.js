@@ -5,7 +5,7 @@ import * as actionCreators from '../actions/actionCreators';
 
 function mapStateToProps(state) {
   return {
-    items: state.items,
+    guards: state.guards,
   }
 }
 

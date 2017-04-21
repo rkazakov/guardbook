@@ -5,6 +5,8 @@ import App from './components/App';
 import HomePage from './components/Home/HomePage';
 import AboutPage from './components/About/AboutPage';
 import GuardsPage from './components/Guards/GuardsPage';
+
+import '../node_modules/milligram/dist/milligram.min.css';
 import './styles/styles.styl';
 
 export default (

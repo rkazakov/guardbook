@@ -7,6 +7,9 @@ class AboutPage extends React.Component {
       <div>
         <h1>About</h1>
         <p>This is about page...</p>
+        <blockquote>
+          <p><em>Yeah!! Milligram is amazing.</em></p>
+        </blockquote>
       </div>
     )
   }

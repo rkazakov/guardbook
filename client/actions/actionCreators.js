@@ -1,7 +1,15 @@
-// increment
-export function incrementLevel(index) {
+// increase level
+export function increaseLevel(index) {
   return {
-    type: 'INCREMENT_LEVEL',
+    type: 'INCREASE_LEVEL',
+    index
+  }
+}
+
+// increase level
+export function deleteGuard(index) {
+  return {
+    type: 'DELETE_GUARD',
     index
   }
 }

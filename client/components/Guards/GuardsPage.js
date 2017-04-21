@@ -13,7 +13,8 @@ class GuardsPage extends React.Component {
               return (
                 <li key={guard.id}>
                   {guard.firstName} - {guard.lastName} - {guard.level}
-                  <button onClick={this.props.incrementLevel.bind(null, index)}>Increment level</button>
+                  <button onClick={this.props.increaseLevel.bind(null, index)}>Increase level</button>
+                  <button onClick={this.props.deleteGuard.bind(null, index)}>Delete</button>
                 </li>
               )
             })

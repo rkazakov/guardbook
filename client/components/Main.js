@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
 import Header from './Header';
+import Footer from './Footer';
 
 class Main extends React.Component {
   render() {
@@ -7,7 +8,7 @@ class Main extends React.Component {
       <div>
         <Header />
         {React.cloneElement({...this.props}.children, {...this.props})}
-        <p>Footer</p>
+        <Footer />
       </div>
     )
   }

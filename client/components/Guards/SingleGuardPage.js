@@ -7,11 +7,11 @@ class SingleGuardPage extends React.Component {
     const { guardId } = this.props.params;
     const currentGuard = guards.find((guard) => guard.id === guardId);
 
-    console.log(this.props);
     return (
       <div>
         <h1>Single Guard:</h1>
-        { currentGuard && currentGuard.firstName }
+        <div>{ currentGuard && currentGuard.firstName }</div>
+        <button onClick={this.props.deleteGuard.bind(null, guardId)}>Delete</button>
       </div>
     )
   }

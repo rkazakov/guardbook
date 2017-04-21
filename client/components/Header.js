@@ -3,7 +3,7 @@ import {Link, IndexLink} from 'react-router';
 
 const Header = () => {
   return (
-    <nav className="navigation">
+    <nav className="header">
       <IndexLink to="/" activeClassName="active">Home</IndexLink>
       {" ᛫ "}
       <Link to="/guards" activeClassName="active">Guards</Link>

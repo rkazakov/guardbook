@@ -3,7 +3,9 @@ import { Link, IndexLink } from 'react-router';
 
 const Footer = () => {
   return (
-    <div>Copyright Guardbook © 2017</div>
+    <div className="footer">
+      Copyright Guardbook © 2017
+    </div>
   );
 };
 

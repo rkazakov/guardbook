@@ -6,10 +6,18 @@ export function increaseLevel(index) {
   }
 }
 
-// increase level
-export function deleteGuard(index) {
+// delete guard
+export function deleteGuard(guardId) {
   return {
     type: 'DELETE_GUARD',
-    index
+    guardId
+  }
+}
+
+// save guard
+export function addGuard(guard) {
+  return {
+    type: 'ADD_GUARD',
+    guard
   }
 }

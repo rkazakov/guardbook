@@ -8,9 +8,16 @@ function guards(state = [], action) {
         ...state.slice(i + 1),
       ]
     case 'DELETE_GUARD':
+      const guardId = action.guardId;
+      const index = state.findIndex((guard) => guard.id === guardId)
       return [
-        ...state.slice(0, action.index),
-        ...state.slice(action.index + 1),
+        ...state.slice(0, index),
+        ...state.slice(index + 1),
+      ]
+    case 'ADD_GUARD':
+      return [
+        ...state,
+        action.guard
       ]
     default:
       return state;

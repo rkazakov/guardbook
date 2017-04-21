@@ -7,8 +7,8 @@ class GuardsPage extends React.Component {
     return (
       <div>
         <h1>Guards</h1>
-        <p>These are our guards:</p>
-        <table class="u-full-width">
+        <Link className="button" to="/guards/add">Add new guard</Link>
+        <table className="u-full-width">
           <thead>
             <tr>
               <th>Name</th>
@@ -30,7 +30,6 @@ class GuardsPage extends React.Component {
                     <td>{guard.location}</td>
                     <td>{guard.isMale === true ? 'Male' : 'Female'}</td>
                     {/* <button onClick={this.props.increaseLevel.bind(null, index)}>Increase level</button> */}
-                    {/* <button onClick={this.props.deleteGuard.bind(null, index)}>Delete</button> */}
                   </tr>
                 )
               })

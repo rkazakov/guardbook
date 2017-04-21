@@ -1,6 +1,6 @@
 const guards = [
   {
-    id: '12345',
+    id: '0001',
     firstName: 'James',
     lastName: 'Gordon',
     level: 1,
@@ -8,7 +8,7 @@ const guards = [
     isMale: true
   },
   {
-    id: '23456',
+    id: '0002',
     firstName: 'Peter',
     lastName: 'Harder',
     level: 2,
@@ -16,7 +16,7 @@ const guards = [
     isMale: true
   },
   {
-    id: '34567',
+    id: '0003',
     firstName: 'Gina',
     lastName: 'Cooper',
     level: 1,

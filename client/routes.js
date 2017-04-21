@@ -5,6 +5,7 @@ import App from './components/App';
 import HomePage from './components/Home/HomePage';
 import AboutPage from './components/About/AboutPage';
 import GuardsPage from './components/Guards/GuardsPage';
+import SingleGuardPage from './components/Guards/SingleGuardPage';
 
 import '../node_modules/milligram/dist/milligram.min.css';
 import './styles/styles.styl';
@@ -14,5 +15,6 @@ export default (
     <IndexRoute component={HomePage} />
     <Route path='guards' component={GuardsPage} />
     <Route path='about' component={AboutPage} />
+    <Route path="/guards/:guardId" component={SingleGuardPage}></Route>
   </Route>
 );

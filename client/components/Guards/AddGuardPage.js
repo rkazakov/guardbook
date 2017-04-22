@@ -1,34 +1,95 @@
 import React from 'react';
-import { Link } from 'react-router';
+import {Link} from 'react-router';
 
 class AddGuardPage extends React.Component {
-  render() {
-    const guard = {
-      id: '0004',
-      firstName: 'Trevor',
-      lastName: 'Door',
-      level: 1,
-      location: 'Adelaide',
-      isMale: true
+  constructor(props, context) {
+    super(props, context);
+
+    this.state = {
+      guard: {
+        id: Math.floor(Math.random() * 10000).toString(),
+        firstName: '',
+        lastName: '',
+        level: 1,
+        location: '',
+        isMale: null
+      }
     };
+
+    this.onFirstNameChange = this.onFirstNameChange.bind(this);
+    this.onLastNameChange = this.onLastNameChange.bind(this);
+    this.onLevelChange = this.onLevelChange.bind(this);
+    this.onLocationChange = this.onLocationChange.bind(this);
+  }
+
+  onFirstNameChange(event) {
+    const firstName = event.target.value;
+    const guard = this.state.guard;
+    this.setState({
+      guard: {
+        ...guard,
+        firstName
+      }
+    });
+  }
+
+  onLastNameChange(event) {
+    const lastName = event.target.value;
+    const guard = this.state.guard;
+    this.setState({
+      guard: {
+        ...guard,
+        lastName
+      }
+    });
+  }
+
+  onLevelChange(event) {
+    const level = event.target.value;
+    const guard = this.state.guard;
+    this.setState({
+      guard: {
+        ...guard,
+        level
+      }
+    });
+  }
+
+  onLocationChange(event) {
+    const location = event.target.value;
+    const guard = this.state.guard;
+    this.setState({
+      guard: {
+        ...guard,
+        location
+      }
+    });
+  }
+
+  render() {
+    const guard = this.state.guard;
 
     return (
       <div>
         <h1>Add Guard</h1>
         <form>
           <fieldset>
-            <label for="firstName">First name</label>
-            <input type="text" placeholder="First name" id="firstName" />
-            <label for="lastName">Last name</label>
-            <input type="text" placeholder="Last name" id="lastName" />
-            <label for="level">Level</label>
-            <select id="level">
+            <label htmlFor="firstName">First name</label>
+            <input type="text" placeholder="First name" id="firstName"
+              onChange={this.onFirstNameChange} value={this.state.guard.firstName}/>
+            <label htmlFor="lastName">Last name</label>
+            <input type="text" placeholder="Last name" id="lastName"
+              onChange={this.onLastNameChange} value={this.state.guard.lastName}/>
+            <label htmlFor="level">Level</label>
+            <select id="level" onChange={this.onLevelChange}
+              value={this.state.guard.level}>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
             </select>
-            <label for="location">Location</label>
-            <select id="location">
+            <label htmlFor="location">Location</label>
+            <select id="location" onChange={this.onLocationChange}
+              value={this.state.guard.location}>
               <option value="Sydney">Sydney</option>
               <option value="Melbourne">Melbourne</option>
               <option value="Brisbane">Brisbane</option>

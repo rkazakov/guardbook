@@ -29,13 +29,13 @@ class GuardsPage extends React.Component {
                     <td>{guard.level}</td>
                     <td>{guard.location}</td>
                     <td>{guard.isMale === true ? 'Male' : 'Female'}</td>
-                    {/* <button onClick={this.props.increaseLevel.bind(null, index)}>Increase level</button> */}
                   </tr>
                 )
               })
             }
           </tbody>
         </table>
+        <button onClick={this.props.loadGuards.bind(null)}>Load guards</button>
       </div>
     )
   }

@@ -19,6 +19,9 @@ function guards(state = [], action) {
         ...state,
         action.guard
       ]
+    case 'LOAD_GUARDS_SUCCESS':
+      console.log(action.guards);
+      return action.guards;
     default:
       return state;
   }

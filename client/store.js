@@ -1,16 +1,20 @@
-import { createStore, compose } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import { syncHistoryWithStore } from 'react-router-redux';
 import { browserHistory } from 'react-router';
+import thunk from 'redux-thunk';
 
 import rootReducer from './reducers/index';
 
 import guards from './data/guards';
 
-const defaultState = {
+const initialState = {
   guards
 };
 
-const store = createStore(rootReducer, defaultState,
+const store = createStore(
+  rootReducer,
+  initialState,
+  applyMiddleware(thunk),
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 

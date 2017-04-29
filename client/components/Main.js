@@ -13,8 +13,7 @@ class Main extends React.Component {
       </div>
     )
   }
-};
-
+}
 // Main.propTypes = {
 //   children: PropTypes.object.isRequred
 // };

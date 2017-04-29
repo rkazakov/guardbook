@@ -8,7 +8,7 @@ class GuardsPage extends React.Component {
       <div>
         <h1>Guards</h1>
         <Link className="button" to="/guards/add">Add new guard</Link>
-        <table className="u-full-width">
+        <table className="table">
           <thead>
             <tr>
               <th>Name</th>

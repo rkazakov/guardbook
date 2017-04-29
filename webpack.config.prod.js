@@ -40,11 +40,11 @@ module.exports = {
         loader: 'style-loader!css-loader!stylus-loader'
       },
       // CSS
-      {
-        test: /\.css$/,
-        include: path.join(__dirname, 'node_modules/milligram/dist'),
-        loader: 'style-loader!css-loader'
-      }
+      // {
+      //   test: /\.css$/,
+      //   include: path.join(__dirname, 'node_modules/bootstrap/dist/css'),
+      //   loader: 'style-loader!css-loader'
+      // }
     ]
   }
 };

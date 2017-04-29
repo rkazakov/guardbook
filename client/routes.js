@@ -8,7 +8,8 @@ import GuardsPage from './components/Guards/GuardsPage';
 import SingleGuardPage from './components/Guards/SingleGuardPage';
 import AddGuardPage from './components/Guards/AddGuardPage';
 
-import '../node_modules/milligram/dist/milligram.min.css';
+// import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+// import '../node_modules/bootstrap/dist/css/bootstrap-theme.css';
 import './styles/styles.styl';
 
 export default (

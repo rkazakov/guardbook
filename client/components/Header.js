@@ -6,14 +6,13 @@ const Header = () => {
       <nav className="navbar navbar-default">
           <div className="container-fluid">
               <div className="navbar-header">
-                  <a className="navbar-brand" href="/">Guardbook</a>
+                  <IndexLink to="/" className="navbar-brand" activeClassName="active">Guardbook</IndexLink>
               </div>
-
-              <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <div className="collapse navbar-collapse">
                   <ul className="nav navbar-nav">
-                      <li activeclassName="active"><IndexLink to="/">Home</IndexLink></li>
-                      <li activeclassName="active"><Link activeclassName="active" to="/guards">Guards</Link></li>
-                      <li activeclassName="active"><Link activeclassName="active" to="/about">About</Link></li>
+                      <li><IndexLink to="/" activeClassName="active">Home</IndexLink></li>
+                      <li><Link activeClassName="active" to="/guards">Guards</Link></li>
+                      <li><Link activeClassName="active" to="/about">About</Link></li>
                   </ul>
               </div>
           </div>

@@ -7,7 +7,7 @@ class GuardsPage extends React.Component {
     return (
       <div>
         <h1>Guards</h1>
-        <Link className="button" to="/guards/add">Add new guard</Link>
+        <Link className="btn btn-default" to="/guards/add">Add new guard</Link>
         <table className="table">
           <thead>
             <tr>
@@ -35,7 +35,7 @@ class GuardsPage extends React.Component {
             }
           </tbody>
         </table>
-        <button onClick={this.props.loadGuards.bind(null)}>Load guards</button>
+        <button className="btn btn-default" onClick={this.props.loadGuards.bind(null)}>Load guards</button>
       </div>
     )
   }

@@ -71,24 +71,23 @@ class AddGuardPage extends React.Component {
 
     return (
       <div>
-        <h1>Add Guard</h1>
         <form>
           <fieldset>
             <label htmlFor="firstName">First name</label>
-            <input type="text" placeholder="First name" id="firstName"
+            <input type="text" className="form-control" placeholder="First name" id="firstName"
               onChange={this.onFirstNameChange} value={this.state.guard.firstName}/>
             <label htmlFor="lastName">Last name</label>
-            <input type="text" placeholder="Last name" id="lastName"
+            <input type="text" className="form-control" placeholder="Last name" id="lastName"
               onChange={this.onLastNameChange} value={this.state.guard.lastName}/>
             <label htmlFor="level">Level</label>
-            <select id="level" onChange={this.onLevelChange}
+            <select id="level" className="form-control" onChange={this.onLevelChange}
               value={this.state.guard.level}>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
             </select>
             <label htmlFor="location">Location</label>
-            <select id="location" onChange={this.onLocationChange}
+            <select id="location" className="form-control" onChange={this.onLocationChange}
               value={this.state.guard.location}>
               <option value="Sydney">Sydney</option>
               <option value="Melbourne">Melbourne</option>
@@ -97,7 +96,8 @@ class AddGuardPage extends React.Component {
             </select>
           </fieldset>
         </form>
-        <button onClick={this.props.addGuard.bind(null, guard)}>Save guard</button>
+        <button type="button" className="btn btn-default"
+                onClick={this.props.addGuard.bind(null, guard)}>Save guard</button>
       </div>
     )
   }

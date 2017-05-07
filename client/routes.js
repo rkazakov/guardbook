@@ -16,8 +16,8 @@ export default (
   <Route path='/' component={App}>
     <IndexRoute component={HomePage} />
     <Route path='guards' component={GuardsPage} />
-    <Route path="/guards/add" component={AddGuardPage}></Route>
-    <Route path="/guards/:guardId" component={SingleGuardPage}></Route>
+    <Route path="/guards/add" component={AddGuardPage} />
+    <Route path="/guards/:guardId" component={SingleGuardPage} />
     <Route path='about' component={AboutPage} />
   </Route>
 );

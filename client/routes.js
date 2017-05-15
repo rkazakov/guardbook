@@ -2,6 +2,11 @@ import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 
 import App from './components/App';
+
+import LoginPage from './components/Auth/LoginPage';
+import SignupPage from './components/Auth/SignupPage';
+import LogoutPage from './components/Auth/LogoutPage';
+
 import HomePage from './components/Home/HomePage';
 import AboutPage from './components/About/AboutPage';
 import GuardsPage from './components/Guards/GuardsPage';
@@ -15,6 +20,9 @@ import './styles/styles.styl';
 export default (
   <Route path='/' component={App}>
     <IndexRoute component={HomePage} />
+    <Route path='login' component={LoginPage} />
+    <Route path='signup' component={SignupPage} />
+    <Route path='logout' component={LogoutPage} />
     <Route path='guards' component={GuardsPage} />
     <Route path="/guards/add" component={AddGuardPage} />
     <Route path="/guards/:guardId" component={SingleGuardPage} />

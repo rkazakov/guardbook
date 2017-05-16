@@ -13,6 +13,8 @@ import GuardsPage from './components/Guards/GuardsPage';
 import SingleGuardPage from './components/Guards/SingleGuardPage';
 import AddGuardPage from './components/Guards/AddGuardPage';
 
+import CompanyPage from './components/Company/CompanyPage';
+
 // import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 // import '../node_modules/bootstrap/dist/css/bootstrap-theme.css';
 import './styles/styles.styl';
@@ -27,5 +29,6 @@ export default (
     <Route path="/guards/add" component={AddGuardPage} />
     <Route path="/guards/:guardId" component={SingleGuardPage} />
     <Route path='about' component={AboutPage} />
+    <Route path='company' component={CompanyPage} />
   </Route>
 );

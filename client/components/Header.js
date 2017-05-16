@@ -19,6 +19,7 @@ const Header = () => {
                   <ul className="nav navbar-nav">
                       <li><IndexLink to="/" activeClassName="active">Home</IndexLink></li>
                       <li><Link activeClassName="active" to="/guards">Guards</Link></li>
+                      <li><Link activeClassName="active" to="/company">Company</Link></li>
                       <li><Link activeClassName="active" to="/about">About</Link></li>
                   </ul>
               </div>

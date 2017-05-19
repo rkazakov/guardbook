@@ -3,9 +3,8 @@ import { Route, IndexRoute } from 'react-router';
 
 import App from './components/App';
 
-import LoginPage from './components/Auth/LoginPage';
-import SignupPage from './components/Auth/SignupPage';
-import LogoutPage from './components/Auth/LogoutPage';
+import LoginPage from './containers/Auth/LoginPage';
+import SignupPage from './containers/Auth/SignupPage';
 
 import HomePage from './components/Home/HomePage';
 import AboutPage from './components/About/AboutPage';
@@ -24,7 +23,7 @@ export default (
     <IndexRoute component={HomePage} />
     <Route path='login' component={LoginPage} />
     <Route path='signup' component={SignupPage} />
-    <Route path='logout' component={LogoutPage} />
+    {/*<Route path='logout' onEnter: handleEnter />*/}
     <Route path='guards' component={GuardsPage} />
     <Route path="/guards/add" component={AddGuardPage} />
     <Route path="/guards/:guardId" component={SingleGuardPage} />

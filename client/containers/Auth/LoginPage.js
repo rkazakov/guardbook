@@ -80,8 +80,6 @@ class LoginPage extends React.Component {
     changeUser(event) {
         const field = event.target.name;
         const user = this.state.user;
-        console.log(field);
-        console.log(user);
         user[field] = event.target.value;
         this.setState({ user });
     }

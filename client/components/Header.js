@@ -21,6 +21,7 @@ const Header = () => {
                       <li><Link activeClassName="active" to="/guards">Guards</Link></li>
                       <li><Link activeClassName="active" to="/company">Company</Link></li>
                       <li><Link activeClassName="active" to="/about">About</Link></li>
+                      <li><Link activeClassName="active" to="/logout">Logout</Link></li>
                   </ul>
               </div>
           </div>
